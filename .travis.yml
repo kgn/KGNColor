@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode7
 
 xcode_project: KGNColor.xcodeproj
-xcode_scheme: KGNColorTests
+xcode_scheme: KGNColor
 
 matrix:
   - xcode_sdk: iphonesimulator8.0
