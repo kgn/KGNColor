@@ -65,10 +65,10 @@ print("lightened tint: \(tintColor.darken(0.5))")
 ```
 
 TODO:
-- [X] Travis
+- [ ] Travis
 - [X] Badges
 - [X] Tests
 - [X] Carthage
-- [ ] CocoaPods
+- [X] CocoaPods
 - [X] Description
 - [ ] Documentation
