@@ -26,7 +26,9 @@ github "kgn/KGNColor"
 
 ### CocoaPods
 
-*TODO*
+```
+pod 'KGNColor'
+```
 
 ## Examples
 
