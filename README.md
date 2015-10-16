@@ -8,9 +8,11 @@
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
 
 TODO:
-- [ ] Travis
+- [X] Travis
 - [X] Badges
-- [ ] Tests
+- [X] Tests
+- [X] Carthage
+- [ ] CocoaPods
 - [ ] Description
 - [ ] Documentation
 - [ ] Example App

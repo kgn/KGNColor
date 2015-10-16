@@ -11,26 +11,28 @@ import XCTest
 
 class KGNColorTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testExampleHex() {
+        XCTAssertEqual(UIColor(hex: 0xFF0000), UIColor.redColor())
+        XCTAssertEqual(UIColor(hex: 0x00FF00), UIColor.greenColor())
+        XCTAssertEqual(UIColor(hex: 0x0000FF), UIColor.blueColor())
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testExampleHexAlpha() {
+        XCTAssertEqual(UIColor(hex: 0xFF0000, alpha: 0.5), UIColor.redColor().colorWithAlphaComponent(0.5))
+        XCTAssertEqual(UIColor(hex: 0x00FF00, alpha: 0.5), UIColor.greenColor().colorWithAlphaComponent(0.5))
+        XCTAssertEqual(UIColor(hex: 0x0000FF, alpha: 0.5), UIColor.blueColor().colorWithAlphaComponent(0.5))
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testExampleLightenColor() {
+        XCTAssertEqual(UIColor.grayColor().lightenColor(0.5), UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1))
+        XCTAssertEqual(UIColor.orangeColor().lightenColor(0.6), UIColor(red: 1, green: 0.8, blue: 0.6, alpha: 1))
+        XCTAssertEqual(UIColor.purpleColor().lightenColor(0.7), UIColor(red: 0.85, green: 0.595, blue: 0.85, alpha: 1))
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testExampleDarkenColor() {
+        XCTAssertEqual(UIColor.grayColor().darkenColor(0.5), UIColor(red: 0.25, green: 0.25, blue: 0.25, alpha: 1))
+        XCTAssertEqual(UIColor.orangeColor().darkenColor(0.6), UIColor(red: 0.4, green: 0.2, blue: 0, alpha: 1))
+        XCTAssertEqual(UIColor.purpleColor().darkenColor(0.3), UIColor(red: 0.35, green: 0, blue: 0.35, alpha: 1))
     }
     
 }
