@@ -34,5 +34,5 @@ before_install:
   # - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   # - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
-script: xctool test -project "$PROJECT.xcodeproj" -scheme $SCHEME -sdk $SDK ONLY_ACTIVE_ARCH=NO
+script: xctool run-tests -project "$PROJECT.xcodeproj" -scheme $SCHEME -test-sdk $SDK ONLY_ACTIVE_ARCH=NO
 
