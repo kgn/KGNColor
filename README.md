@@ -1,6 +1,6 @@
 # KGNColor
 
-KGNColor is a collection of helpful UIColor extensions.
+`KGNColor` is a collection of helpful `UIColor` extensions.
 
 [![iOS 8.0+](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]()
 [![Xcode 7.0](http://img.shields.io/badge/Xcode-7.0-blue.svg)]()
@@ -10,6 +10,18 @@ KGNColor is a collection of helpful UIColor extensions.
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-Compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![Build Status](https://travis-ci.org/kgn/UIColorCategories.svg)](https://travis-ci.org/kgn/UIColorCategories)
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
+
+# Installing
+
+## Carthage
+
+Add `KGNColor` to your `Cartfile`: `github "kgn/KGNColor"`.
+
+## CocoaPods
+
+*TODO*
+
+# Examples
 
 ## Hex Initializer
 Using a hex value is often the easiest way to use the exact color from a design.
