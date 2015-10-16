@@ -11,25 +11,28 @@
 [![Build Status](https://travis-ci.org/kgn/UIColorCategories.svg)](https://travis-ci.org/kgn/UIColorCategories)
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
 
-# Installing
+## Installing
 
-## Carthage
+### Carthage
 
-Add `KGNColor` to your `Cartfile`: `github "kgn/KGNColor"`.
+Add `KGNColor` to your `Cartfile`.
+```
+github "kgn/KGNColor"
+```
 
-## CocoaPods
+### CocoaPods
 
 *TODO*
 
-# Examples
+## Examples
 
-## Hex Initializer
+### Hex Initializer
 Using a hex value is often the easiest way to use the exact color from a design.
 ``` Swift
 let tintColor = UIColor(hex: 0x2DFF5F)
 ```
 
-## Components
+### Components
 Used this helpful tuple to get the `red`, `green`, `blue` and `alpha` values of a `UIColor`.
 
 ``` Swift
@@ -39,19 +42,19 @@ print("red: \(tintColor.components.green)")
 print("red: \(tintColor.components.blue)")
 ```
 
-## Invert a Color
+### Invert a Color
 ``` Swift
 let tintColor = UIColor(hex: 0x2DFF5F)
 print("inverted tint: \(tintColor.testInvert())")
 ```
 
-## Lighten a Color
+### Lighten a Color
 ``` Swift
 let tintColor = UIColor(hex: 0x2DFF5F)
 print("lightened tint: \(tintColor.lighten(0.5))")
 ```
 
-## Darken a Color
+### Darken a Color
 ``` Swift
 let tintColor = UIColor(hex: 0x2DFF5F)
 print("lightened tint: \(tintColor.darken(0.5))")
