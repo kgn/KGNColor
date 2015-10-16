@@ -18,14 +18,11 @@
 ## Installing
 
 ### Carthage
-
-Add `KGNColor` to your `Cartfile`.
 ```
 github "kgn/KGNColor"
 ```
 
 ### CocoaPods
-
 ```
 pod 'KGNColor'
 ```
@@ -42,27 +39,28 @@ let tintColor = UIColor(hex: 0x2DFF5F)
 Used this helpful tuple to get the `red`, `green`, `blue` and `alpha` values of a `UIColor`.
 
 ``` Swift
-let tintColor = UIColor(hex: 0x2DFF5F)
+let tintColor = UIColor.brownColor()
 print("red: \(tintColor.components.red)")
-print("red: \(tintColor.components.green)")
-print("red: \(tintColor.components.blue)")
+print("green: \(tintColor.components.green)")
+print("blue: \(tintColor.components.blue)")
+print("alpha: \(tintColor.components.alpha)")
 ```
 
 ### Invert a Color
 ``` Swift
-let tintColor = UIColor(hex: 0x2DFF5F)
+let tintColor = UIColor.redColor()
 print("inverted tint: \(tintColor.testInvert())")
 ```
 
 ### Lighten a Color
 ``` Swift
-let tintColor = UIColor(hex: 0x2DFF5F)
+let tintColor = UIColor.blueColor()
 print("lightened tint: \(tintColor.lighten(0.5))")
 ```
 
 ### Darken a Color
 ``` Swift
-let tintColor = UIColor(hex: 0x2DFF5F)
+let tintColor = UIColor.greenColor()
 print("lightened tint: \(tintColor.darken(0.5))")
 ```
 
@@ -73,4 +71,4 @@ TODO:
 - [X] Carthage
 - [X] CocoaPods
 - [X] Description
-- [ ] Documentation
+- [X] Documentation
