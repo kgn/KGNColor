@@ -2,7 +2,7 @@
 
 KGNColor is a collection of helpful UIColor extensions.
 
-[![iOS 8.0+](http://img.shields.io/badge/iOS-8.2%2B-blue.svg)]()
+[![iOS 8.0+](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]()
 [![Xcode 7.0](http://img.shields.io/badge/Xcode-7.0-blue.svg)]()
 [![Swift 2.0](http://img.shields.io/badge/Swift-2.0-blue.svg)]()
 [![Release](http://img.shields.io/github/release/kgn/UIColorCategories.svg)](/releases)
