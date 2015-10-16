@@ -19,13 +19,26 @@ extension UIColor {
         )
     }
 
-    public func lightenColor(lighten: CGFloat) -> UIColor{
+    public var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        let components = CGColorGetComponents(self.CGColor)
+        if CGColorGetNumberOfComponents(self.CGColor) == 2 {
+            return (components[0], components[0], components[0], components[1])
+        }
+        return (components[0], components[1], components[2], components[3])
+    }
+
+    public func invert() -> UIColor{
+        let components = self.components
+        return UIColor(red: 1-components.red, green: 1-components.green, blue: 1-components.blue, alpha: components.alpha)
+    }
+
+    public func lighten(lighten: CGFloat) -> UIColor{
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         return UIColor(hue: hue, saturation: saturation*(1-lighten), brightness: brightness*(1+lighten), alpha: alpha)
     }
 
-    public func darkenColor(darken: CGFloat) -> UIColor{
+    public func darken(darken: CGFloat) -> UIColor{
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         return UIColor(hue: hue, saturation: saturation*(1+darken), brightness: brightness*(1-darken), alpha: alpha)
