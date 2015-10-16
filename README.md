@@ -10,6 +10,9 @@
 
 [![Build Status](https://travis-ci.org/kgn/UIColorCategories.svg)](https://travis-ci.org/kgn/UIColorCategories)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-Compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
+[![CocoaPods Platforms](https://img.shields.io/cocoapods/p/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
 
