@@ -25,20 +25,22 @@ class KGNColorTests: XCTestCase {
 
     func testInvert() {
         XCTAssertEqual(UIColor.redColor().invert(), UIColor(red: 0, green: 1, blue: 1, alpha: 1))
+        XCTAssertEqual(UIColor.greenColor().invert(), UIColor(red: 1, green: 0, blue: 1, alpha: 1))
         XCTAssertEqual(UIColor.blueColor().invert(), UIColor(red: 1, green: 1, blue: 0, alpha: 1))
-        XCTAssertEqual(UIColor.brownColor().invert(), UIColor(red: 0.4, green: 0.6, blue: 0.8, alpha: 1))
     }
 
     func testLighten() {
         XCTAssertEqual(UIColor.grayColor().lighten(0.5), UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1))
-        XCTAssertEqual(UIColor.orangeColor().lighten(0.6), UIColor(red: 1, green: 0.8, blue: 0.6, alpha: 1))
-        XCTAssertEqual(UIColor.purpleColor().lighten(0.7), UIColor(red: 0.85, green: 0.595, blue: 0.85, alpha: 1))
+        XCTAssertEqual(UIColor.redColor().lighten(0.5), UIColor(red: 1, green: 0.5, blue: 0.5, alpha: 1))
+        XCTAssertEqual(UIColor.greenColor().lighten(0.5), UIColor(red: 0.5, green: 1, blue: 0.5, alpha: 1))
+        XCTAssertEqual(UIColor.blueColor().lighten(0.5), UIColor(red: 0.5, green: 0.5, blue: 1, alpha: 1))
     }
 
     func testDarken() {
         XCTAssertEqual(UIColor.grayColor().darken(0.5), UIColor(red: 0.25, green: 0.25, blue: 0.25, alpha: 1))
-        XCTAssertEqual(UIColor.orangeColor().darken(0.6), UIColor(red: 0.4, green: 0.2, blue: 0, alpha: 1))
-        XCTAssertEqual(UIColor.purpleColor().darken(0.3), UIColor(red: 0.35, green: 0, blue: 0.35, alpha: 1))
+        XCTAssertEqual(UIColor.redColor().darken(0.5), UIColor(red: 0.5, green: 0, blue: 0, alpha: 1))
+        XCTAssertEqual(UIColor.greenColor().darken(0.5), UIColor(red: 0, green: 0.5, blue: 0, alpha: 1))
+        XCTAssertEqual(UIColor.blueColor().darken(0.5), UIColor(red: 0, green: 0, blue: 0.5, alpha: 1))
     }
 
     func testComponentsGray() {
