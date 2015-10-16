@@ -11,8 +11,6 @@ KGNColor is a collection of helpful UIColor extensions.
 [![Build Status](https://travis-ci.org/kgn/UIColorCategories.svg)](https://travis-ci.org/kgn/UIColorCategories)
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
 
-# Examples:
-
 ## Hex Initializer
 Using a hex value is often the easiest way to use the exact color from a design.
 ``` Swift
