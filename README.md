@@ -1,3 +1,7 @@
+# KGNColor
+
+KGNColor is a collection of helpful UIColor extensions.
+
 [![iOS 8.0+](http://img.shields.io/badge/iOS-8.2%2B-blue.svg)]()
 [![Xcode 7.0](http://img.shields.io/badge/Xcode-7.0-blue.svg)]()
 [![Swift 2.0](http://img.shields.io/badge/Swift-2.0-blue.svg)]()
@@ -7,12 +11,47 @@
 [![Build Status](https://travis-ci.org/kgn/UIColorCategories.svg)](https://travis-ci.org/kgn/UIColorCategories)
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
 
+# Examples:
+
+## Hex Initializer
+Using a hex value is often the easiest way to use the exact color from a design.
+``` Swift
+let tintColor = UIColor(hex: 0x2DFF5F)
+```
+
+## Components
+Used this helpful tuple to get the `red`, `green`, `blue` and `alpha` values of a `UIColor`.
+
+``` Swift
+let tintColor = UIColor(hex: 0x2DFF5F)
+print("red: \(tintColor.components.red)")
+print("red: \(tintColor.components.green)")
+print("red: \(tintColor.components.blue)")
+```
+
+## Invert a Color
+``` Swift
+let tintColor = UIColor(hex: 0x2DFF5F)
+print("inverted tint: \(tintColor.testInvert())")
+```
+
+## Lighten a Color
+``` Swift
+let tintColor = UIColor(hex: 0x2DFF5F)
+print("lightened tint: \(tintColor.lighten(0.5))")
+```
+
+## Darken a Color
+``` Swift
+let tintColor = UIColor(hex: 0x2DFF5F)
+print("lightened tint: \(tintColor.darken(0.5))")
+```
+
 TODO:
 - [X] Travis
 - [X] Badges
 - [X] Tests
 - [X] Carthage
 - [ ] CocoaPods
-- [ ] Description
+- [X] Description
 - [ ] Documentation
-- [ ] Example App
