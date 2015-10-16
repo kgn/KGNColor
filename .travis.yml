@@ -5,14 +5,14 @@ xcode_project: KGNColor.xcodeproj
 xcode_scheme: KGNColor
 
 env:
-	matrix:
-	  - xcode_sdk: iphonesimulator8.0
-	  - xcode_sdk: iphonesimulator8.1
-	  - xcode_sdk: iphonesimulator8.2
-	  - xcode_sdk: iphonesimulator8.3
-	  - xcode_sdk: iphonesimulator8.4
-	  - xcode_sdk: iphonesimulator9.0
+  matrix:
+    - xcode_sdk: iphonesimulator8.0
+    - xcode_sdk: iphonesimulator8.1
+    - xcode_sdk: iphonesimulator8.2
+    - xcode_sdk: iphonesimulator8.3
+    - xcode_sdk: iphonesimulator8.4
+    - xcode_sdk: iphonesimulator9.0
 
 before_install:
-	- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-	- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
