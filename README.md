@@ -65,7 +65,7 @@ print("lightened tint: \(tintColor.darken(0.5))")
 ```
 
 TODO:
-- [ ] Travis
+- [ ] Travis ([#4961](https://github.com/travis-ci/travis-ci/issues/4961)) ([#4962](https://github.com/travis-ci/travis-ci/issues/4962))
 - [X] Badges
 - [X] Tests
 - [X] Carthage
