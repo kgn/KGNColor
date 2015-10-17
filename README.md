@@ -68,4 +68,4 @@ TODO:
 - [X] Carthage
 - [X] CocoaPods
 - [X] Description
-- [X] Documentation
+- [ ] Documentation (Confirm they are working)
