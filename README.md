@@ -48,20 +48,17 @@ print("alpha: \(tintColor.components.alpha)")
 
 ### Invert a Color
 ``` Swift
-let tintColor = UIColor.redColor()
-print("inverted tint: \(tintColor.testInvert())")
+let tintColor = UIColor.redColor().testInvert()
 ```
 
 ### Lighten a Color
 ``` Swift
-let tintColor = UIColor.blueColor()
-print("lightened tint: \(tintColor.lighten(0.5))")
+let tintColor = UIColor.blueColor().lighten(0.5)
 ```
 
 ### Darken a Color
 ``` Swift
-let tintColor = UIColor.greenColor()
-print("lightened tint: \(tintColor.darken(0.5))")
+let tintColor = UIColor.greenColor().darken(0.5)
 ```
 
 TODO:
