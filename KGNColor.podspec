@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'KGNColor'
-  spec.version = '0.1.2'
+  spec.version = '0.1.4'
   spec.authors = {'David Keegan' => 'me@davidkeegan.com'}
   spec.homepage = 'https://github.com/kgn/KGNColor'
   spec.summary = 'KGNColor is a collection of helpful UIColor extensions.'  

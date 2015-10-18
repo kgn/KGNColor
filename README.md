@@ -63,8 +63,6 @@ let tintColor = UIColor.blueColor().lighten(0.5)
 let tintColor = UIColor.greenColor().darken(0.5)
 ```
 
---
-
 ## Progress
 - [X] Badges
 - [X] Tests
