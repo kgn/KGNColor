@@ -14,8 +14,8 @@
 [![CocoaPods Platforms](https://img.shields.io/cocoapods/p/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
-[![Star](https://img.shields.io/github/followers/kgn.svg?style=social&label=Follow%20%40kgn)](https://github.com/kgn/KGNColor)
-[![Star](https://img.shields.io/github/stars/kgn/KGNColor.svg?style=social&label=Star)](https://github.com/kgn)
+[![Star](https://img.shields.io/github/followers/kgn.svg?style=social&label=Follow%20%40kgn)](https://github.com/kgn)
+[![Star](https://img.shields.io/github/stars/kgn/KGNColor.svg?style=social&label=Star)](https://github.com/kgn/KGNColor)
 
 ## Installing
 
@@ -70,4 +70,4 @@ let tintColor = UIColor.greenColor().darken(0.5)
 - [X] Carthage
 - [X] CocoaPods
 - [X] Description
-- [ ] Documentation (Confirm they are working)
+- [X] Documentation
