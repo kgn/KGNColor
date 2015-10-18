@@ -63,10 +63,12 @@ let tintColor = UIColor.blueColor().lighten(0.5)
 let tintColor = UIColor.greenColor().darken(0.5)
 ```
 
-## TODO:
-- [ ] Travis ([#4961](https://github.com/travis-ci/travis-ci/issues/4961)) ([#4962](https://github.com/travis-ci/travis-ci/issues/4962))
+--
+
+## Progress
 - [X] Badges
 - [X] Tests
+- [X] Travis
 - [X] Carthage
 - [X] CocoaPods
 - [X] Description
