@@ -14,8 +14,8 @@
 [![CocoaPods Platforms](https://img.shields.io/cocoapods/p/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
-[![Star](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)]()
-[![Star](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)]()
+[![Star](https://img.shields.io/github/followers/kgn.svg?style=social&label=Follow%20%40kgn)](https://github.com/kgn/KGNColor)
+[![Star](https://img.shields.io/github/stars/kgn/KGNColor.svg?style=social&label=Star)](https://github.com/kgn)
 
 ## Installing
 
@@ -63,7 +63,7 @@ let tintColor = UIColor.blueColor().lighten(0.5)
 let tintColor = UIColor.greenColor().darken(0.5)
 ```
 
-TODO:
+## TODO:
 - [ ] Travis ([#4961](https://github.com/travis-ci/travis-ci/issues/4961)) ([#4962](https://github.com/travis-ci/travis-ci/issues/4962))
 - [X] Badges
 - [X] Tests
