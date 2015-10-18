@@ -2,9 +2,9 @@ language: objective-c
 osx_image: xcode7
 
 env:
-  gobal:
-    - PROJECT=KGNColor
-    - SCHEME=$PROJECT
+  global:
+  - PROJECT=KGNColor
+  - SCHEME=$PROJECT
   matrix:
     - DESTINATION="OS=9.0,name=iPad 2"
     - DESTINATION="OS=9.0,name=iPhone 6"
