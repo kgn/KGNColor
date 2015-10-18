@@ -14,6 +14,8 @@
 [![CocoaPods Platforms](https://img.shields.io/cocoapods/p/KGNColor.svg)](https://cocoapods.org/pods/KGNColor)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@iamkgn-55ACEE.svg)](http://twitter.com/iamkgn)
+[![Star](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)]()
+[![Star](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)]()
 
 ## Installing
 
