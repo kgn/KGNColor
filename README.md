@@ -48,7 +48,7 @@ print("alpha: \(tintColor.components.alpha)")
 
 ### Invert a Color
 ``` Swift
-let tintColor = UIColor.redColor().testInvert()
+let tintColor = UIColor.redColor().invert()
 ```
 
 ### Lighten a Color
