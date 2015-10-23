@@ -6,6 +6,10 @@ env:
   - PROJECT=KGNColor
   - SCHEME=$PROJECT
   matrix:
+    - DESTINATION="OS=9.1,name=iPad 2"
+    - DESTINATION="OS=9.1,name=iPhone 6"
+    - DESTINATION="OS=9.1,name=iPhone 6 Plus"
+
     - DESTINATION="OS=9.0,name=iPad 2"
     - DESTINATION="OS=9.0,name=iPhone 6"
     - DESTINATION="OS=9.0,name=iPhone 6 Plus"
@@ -14,6 +18,8 @@ env:
     - DESTINATION="OS=8.2,name=iPhone 4s"
     - DESTINATION="OS=8.3,name=iPhone 5"
     - DESTINATION="OS=8.4,name=iPhone 5s"
+
+    - DESTINATION="OS=2.0,name=Apple Watch - 38mm"    
 
 script: 
   - xctool clean test -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk iphonesimulator -destination "$DESTINATION"
