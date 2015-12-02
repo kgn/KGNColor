@@ -83,7 +83,7 @@ extension UIColor {
 
      - Returns: A random color object.
      */
-    public func random(alpha: CGFloat = 1) -> UIColor {
+    public class func random(alpha: CGFloat = 1) -> UIColor {
         let hue = CGFloat(arc4random() % 256 / 256)  //  0.0 to 1.0
         let saturation = CGFloat(arc4random() % 128 / 256) + 0.5  //  0.5 to 1.0, away from white
         let brightness = CGFloat(arc4random() % 128 / 256) + 0.5  //  0.5 to 1.0, away from black
