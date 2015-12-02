@@ -58,5 +58,16 @@ class KGNColorTests: XCTestCase {
         XCTAssertEqual(color.components.blue, 0.2)
         XCTAssertEqual(color.components.alpha, 0.6)
     }
+
+    func testRandomColor() {
+        XCTAssertNotEqual(UIColor.randomColor(), UIColor.randomColor())
+
+        let alpha: CGFloat = 0.45
+        let colorWithAlpha = UIColor.randomColor(alpha)
+        XCTAssertEqual(colorWithAlpha.components.alpha, alpha)
+
+        let color = UIColor.randomColor()
+        XCTAssertEqual(color.components.alpha, 1)
+    }
     
 }
