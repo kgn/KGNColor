@@ -76,4 +76,18 @@ extension UIColor {
         return UIColor(hue: hue, saturation: saturation*(1+value), brightness: brightness*(1-value), alpha: alpha)
     }
 
+    /**
+     Returns a random color, useful for view debugging.
+
+    - Parameter alpha: The alpha value of the color.
+
+     - Returns: A random color object.
+     */
+    public func random(alpha: CGFloat = 1) -> UIColor {
+        let hue = arc4random() % 256 / 256  //  0.0 to 1.0
+        let saturation = (arc4random() % 128 / 256) + 0.5  //  0.5 to 1.0, away from white
+        let brightness = (arc4random() % 128 / 256) + 0.5  //  0.5 to 1.0, away from black
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
+    }
+
 }

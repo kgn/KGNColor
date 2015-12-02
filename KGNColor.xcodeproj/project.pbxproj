@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		836E699B1BCCD3B40089EAB1 /* KGNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 836E699A1BCCD3B40089EAB1 /* KGNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		836E69A21BCCD3B40089EAB1 /* KGNColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E69971BCCD3B40089EAB1 /* KGNColor.framework */; settings = {ASSET_TAGS = (); }; };
+		836E69A21BCCD3B40089EAB1 /* KGNColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E69971BCCD3B40089EAB1 /* KGNColor.framework */; };
 		836E69A71BCCD3B40089EAB1 /* KGNColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69A61BCCD3B40089EAB1 /* KGNColorTests.swift */; };
-		836E69B21BCCD4390089EAB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		836E69B21BCCD4390089EAB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
