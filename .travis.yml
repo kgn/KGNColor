@@ -20,8 +20,8 @@ env:
 before_install:
   - brew update
   - brew install carthage
-before_script:
-  - carthage bootstrap
+# before_script:
+#   - carthage bootstrap
 before_deploy:
   - carthage build --no-skip-current
   - carthage archive $PROJECT
@@ -32,7 +32,7 @@ deploy:
   provider: releases
   api_key:
     secure: JpxOxmdsdh4zEYuqKWBKd8qMxbiiSvxkpzPOebeCJzTG7HjSxOkywdakP9Zgn9M4FN3R3amVZk/V6lPIxP8aEd9xXz3kjrLu4JBoGVElsZcKRfsdMgOWUWofMgF54UkBfHp6oBg0HxkQeO/Rz+VotWlWI3GNup2dzetozmfsQmKWjzj4jPyhBIX2esbJFhrj+eR1b0XSBN2shOHxGx6ws4mrh3E8urdt+lLN9j6zsCwUQVgbYM9fCqZXDxMBiDG3EO9j3JAzPwf8zPntBhbJbg1SGiYX69J+9EWf/BBaqCUI2RD3EPXoHjcD6zjO4aSq44fdmHjH4h1W173n5rQ4VREc19cMvNK2Png6lH1WpDy1wPw0pY/potbEAb7Pcjxfew/sw9KAW874IcpMio8OJUBmUfml3E4HfR+mn7RUUMQa46+OXPbbilmIhXpIyYzIxK7/8T3X5Q2gpdRHYzUYfh/bJOebkF5Q0LjEhJ2UV27qiC5mRG9MWL6Fo4xwowTbn+e9iOPGRNfXVjNjs06RMAwVrLBITDzEakuBbxu12ZbNyPovhomop56IfQdVJlPRXrf7F2rjAu2IeyVXdNCfP8e0eFiDqkOjMnMUEYbXmYcGolxmX49nXv78a0y0rC4I180Cnp5WGXRMtBa7U0MF16WLLob6pkqPqgd/pYI2g4o=
-  file: $PROJECT.framework.zip
+  file: "$PROJECT.framework.zip"
   skip_cleanup: true
   on:
     repo: kgn/KGNColor
