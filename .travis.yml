@@ -31,6 +31,7 @@ before_deploy:
 
 xcode_project: KGNColor.xcodeproj
 xcode_scheme: KGNColor
+xcode_sdk: iphonesimulator
 
 deploy:
   provider: releases
