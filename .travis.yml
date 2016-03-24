@@ -29,8 +29,8 @@ before_deploy:
 # script:
 #   - xcodebuild test -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk iphonesimulator -destination "$DESTINATION"
 
-xcode_project: $PROJECT
-xcode_scheme: $SCHEME
+xcode_project: "$PROJECT"
+xcode_scheme: "$SCHEME"
 
 deploy:
   provider: releases
