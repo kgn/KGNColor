@@ -29,7 +29,7 @@ before_deploy:
 # script:
 #   - xcodebuild test -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk iphonesimulator -destination "$DESTINATION"
 
-xcode_project: KGNColor
+xcode_project: KGNColor.xcodeproj
 xcode_scheme: KGNColor
 
 deploy:
