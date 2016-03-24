@@ -35,5 +35,5 @@ deploy:
   file: "$PROJECT.framework.zip"
   skip_cleanup: true
   on:
-    repo: kgn/KGNColor
+    repo: kgn/$PROJECT
     tags: true
