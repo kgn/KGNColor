@@ -126,8 +126,8 @@
 		836E69A51BCCD3B40089EAB1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				836E69A61BCCD3B40089EAB1 /* KGNColorTests.swift */,
 				836E69A81BCCD3B40089EAB1 /* Info.plist */,
+				836E69A61BCCD3B40089EAB1 /* KGNColorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -663,6 +663,7 @@
 				6412C2C81D29FD2400C78066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6412C2DE1D29FE0F00C78066 /* Build configuration list for PBXNativeTarget "KGNColor-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +672,7 @@
 				6412C2E01D29FE0F00C78066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6412C2F71D2A0A4D00C78066 /* Build configuration list for PBXNativeTarget "KGNColorTests-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +681,7 @@
 				6412C2F91D2A0A4D00C78066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836E69911BCCD3B30089EAB1 /* Build configuration list for PBXProject "KGNColor" */ = {
 			isa = XCConfigurationList;

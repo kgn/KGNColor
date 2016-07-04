@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6412C2F11D2A0A4D00C78066"
+               BuildableName = "KGNColorTests-tvOS.xctest"
+               BlueprintName = "KGNColorTests-tvOS"
+               ReferencedContainer = "container:KGNColor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6412C2D81D29FE0E00C78066"
+            BuildableName = "KGNColor.framework"
+            BlueprintName = "KGNColor-tvOS"
+            ReferencedContainer = "container:KGNColor.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
