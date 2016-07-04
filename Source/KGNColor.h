@@ -9,7 +9,7 @@
 //#if WATCHOS_DEPLOYMENT_TARGET
 //#import <WatchKit/WatchKit.h>
 //#else
-#import <UIKit/UIKit.h>
+@import UIKit;
 //#endif
 
 //! Project version number for KGNColor.
