@@ -13,6 +13,7 @@ script:
   - xcodebuild $TEST -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
 
 before_install:
+  - xcrun swift -version
   - brew update
 
 # before_script:
