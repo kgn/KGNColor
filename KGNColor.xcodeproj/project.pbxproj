@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		836E699B1BCCD3B40089EAB1 /* KGNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 836E699A1BCCD3B40089EAB1 /* KGNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6412C2D31D29FDEB00C78066 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */; };
+		6412C2E61D29FFB900C78066 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */; };
+		6412C2E91D2A007000C78066 /* KGNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6412C2E81D2A003C00C78066 /* KGNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6412C2EA1D2A007100C78066 /* KGNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6412C2E81D2A003C00C78066 /* KGNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6412C2EB1D2A007100C78066 /* KGNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6412C2E81D2A003C00C78066 /* KGNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		836E69A21BCCD3B40089EAB1 /* KGNColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E69971BCCD3B40089EAB1 /* KGNColor.framework */; };
 		836E69A71BCCD3B40089EAB1 /* KGNColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69A61BCCD3B40089EAB1 /* KGNColorTests.swift */; };
 		836E69B21BCCD4390089EAB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */; };
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6412C2C11D29FD2400C78066 /* KGNColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGNColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6412C2D91D29FE0F00C78066 /* KGNColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGNColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6412C2E71D2A003C00C78066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6412C2E81D2A003C00C78066 /* KGNColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGNColor.h; sourceTree = "<group>"; };
+		6412C2ED1D2A03D600C78066 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		836E69971BCCD3B40089EAB1 /* KGNColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGNColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		836E699A1BCCD3B40089EAB1 /* KGNColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGNColor.h; sourceTree = "<group>"; };
-		836E699C1BCCD3B40089EAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E69A11BCCD3B40089EAB1 /* KGNColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGNColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E69A61BCCD3B40089EAB1 /* KGNColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGNColorTests.swift; sourceTree = "<group>"; };
 		836E69A81BCCD3B40089EAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +41,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6412C2BD1D29FD2400C78066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6412C2D51D29FE0E00C78066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836E69931BCCD3B40089EAB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +76,7 @@
 		836E698D1BCCD3B30089EAB1 = {
 			isa = PBXGroup;
 			children = (
+				6412C2ED1D2A03D600C78066 /* .travis.yml */,
 				836E69991BCCD3B40089EAB1 /* Source */,
 				836E69A51BCCD3B40089EAB1 /* Tests */,
 				836E69981BCCD3B40089EAB1 /* Products */,
@@ -66,6 +88,8 @@
 			children = (
 				836E69971BCCD3B40089EAB1 /* KGNColor.framework */,
 				836E69A11BCCD3B40089EAB1 /* KGNColorTests.xctest */,
+				6412C2C11D29FD2400C78066 /* KGNColor.framework */,
+				6412C2D91D29FE0F00C78066 /* KGNColor.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +97,9 @@
 		836E69991BCCD3B40089EAB1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6412C2E71D2A003C00C78066 /* Info.plist */,
+				6412C2E81D2A003C00C78066 /* KGNColor.h */,
 				836E69B11BCCD4390089EAB1 /* UIColor+Extension.swift */,
-				836E699A1BCCD3B40089EAB1 /* KGNColor.h */,
-				836E699C1BCCD3B40089EAB1 /* Info.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -92,20 +116,72 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6412C2BE1D29FD2400C78066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6412C2EB1D2A007100C78066 /* KGNColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6412C2D61D29FE0E00C78066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6412C2EA1D2A007100C78066 /* KGNColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836E69941BCCD3B40089EAB1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836E699B1BCCD3B40089EAB1 /* KGNColor.h in Headers */,
+				6412C2E91D2A007000C78066 /* KGNColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		836E69961BCCD3B40089EAB1 /* KGNColor */ = {
+		6412C2C01D29FD2400C78066 /* KGNColor-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 836E69AB1BCCD3B40089EAB1 /* Build configuration list for PBXNativeTarget "KGNColor" */;
+			buildConfigurationList = 6412C2C61D29FD2400C78066 /* Build configuration list for PBXNativeTarget "KGNColor-watchOS" */;
+			buildPhases = (
+				6412C2BC1D29FD2400C78066 /* Sources */,
+				6412C2BD1D29FD2400C78066 /* Frameworks */,
+				6412C2BE1D29FD2400C78066 /* Headers */,
+				6412C2BF1D29FD2400C78066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KGNColor-watchOS";
+			productName = KGNColor;
+			productReference = 6412C2C11D29FD2400C78066 /* KGNColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6412C2D81D29FE0E00C78066 /* KGNColor-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6412C2DE1D29FE0F00C78066 /* Build configuration list for PBXNativeTarget "KGNColor-tvOS" */;
+			buildPhases = (
+				6412C2D41D29FE0E00C78066 /* Sources */,
+				6412C2D51D29FE0E00C78066 /* Frameworks */,
+				6412C2D61D29FE0E00C78066 /* Headers */,
+				6412C2D71D29FE0E00C78066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KGNColor-tvOS";
+			productName = KGNColor;
+			productReference = 6412C2D91D29FE0F00C78066 /* KGNColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		836E69961BCCD3B40089EAB1 /* KGNColor-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836E69AB1BCCD3B40089EAB1 /* Build configuration list for PBXNativeTarget "KGNColor-iOS" */;
 			buildPhases = (
 				836E69921BCCD3B40089EAB1 /* Sources */,
 				836E69931BCCD3B40089EAB1 /* Frameworks */,
@@ -116,7 +192,7 @@
 			);
 			dependencies = (
 			);
-			name = KGNColor;
+			name = "KGNColor-iOS";
 			productName = KGNColor;
 			productReference = 836E69971BCCD3B40089EAB1 /* KGNColor.framework */;
 			productType = "com.apple.product-type.framework";
@@ -149,6 +225,12 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "David Keegan";
 				TargetAttributes = {
+					6412C2C01D29FD2400C78066 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6412C2D81D29FE0E00C78066 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					836E69961BCCD3B40089EAB1 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
@@ -169,13 +251,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				836E69961BCCD3B40089EAB1 /* KGNColor */,
+				836E69961BCCD3B40089EAB1 /* KGNColor-iOS */,
+				6412C2D81D29FE0E00C78066 /* KGNColor-tvOS */,
+				6412C2C01D29FD2400C78066 /* KGNColor-watchOS */,
 				836E69A01BCCD3B40089EAB1 /* KGNColorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6412C2BF1D29FD2400C78066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6412C2D71D29FE0E00C78066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836E69951BCCD3B40089EAB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +291,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6412C2BC1D29FD2400C78066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6412C2D31D29FDEB00C78066 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6412C2D41D29FE0E00C78066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6412C2E61D29FFB900C78066 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836E69921BCCD3B40089EAB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,12 +328,96 @@
 /* Begin PBXTargetDependency section */
 		836E69A41BCCD3B40089EAB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 836E69961BCCD3B40089EAB1 /* KGNColor */;
+			target = 836E69961BCCD3B40089EAB1 /* KGNColor-iOS */;
 			targetProxy = 836E69A31BCCD3B40089EAB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6412C2C71D29FD2400C78066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
+				PRODUCT_NAME = KGNColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		6412C2C81D29FD2400C78066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
+				PRODUCT_NAME = KGNColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		6412C2DF1D29FE0F00C78066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
+				PRODUCT_NAME = KGNColor;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		6412C2E01D29FE0F00C78066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
+				PRODUCT_NAME = KGNColor;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 		836E69A91BCCD3B40089EAB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +510,7 @@
 		836E69AC1BCCD3B40089EAB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -322,7 +521,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KGNColor;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -331,6 +530,7 @@
 		836E69AD1BCCD3B40089EAB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -341,7 +541,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidkeegan.KGNColor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KGNColor;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -369,6 +569,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6412C2C61D29FD2400C78066 /* Build configuration list for PBXNativeTarget "KGNColor-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6412C2C71D29FD2400C78066 /* Debug */,
+				6412C2C81D29FD2400C78066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6412C2DE1D29FE0F00C78066 /* Build configuration list for PBXNativeTarget "KGNColor-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6412C2DF1D29FE0F00C78066 /* Debug */,
+				6412C2E01D29FE0F00C78066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		836E69911BCCD3B30089EAB1 /* Build configuration list for PBXProject "KGNColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -378,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		836E69AB1BCCD3B40089EAB1 /* Build configuration list for PBXNativeTarget "KGNColor" */ = {
+		836E69AB1BCCD3B40089EAB1 /* Build configuration list for PBXNativeTarget "KGNColor-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				836E69AC1BCCD3B40089EAB1 /* Debug */,
