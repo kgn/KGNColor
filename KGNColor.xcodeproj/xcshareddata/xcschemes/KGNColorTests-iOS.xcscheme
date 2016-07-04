@@ -18,8 +18,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "836E69A01BCCD3B40089EAB1"
-               BuildableName = "KGNColorTests.xctest"
-               BlueprintName = "KGNColorTests"
+               BuildableName = "KGNColorTests-iOS.xctest"
+               BlueprintName = "KGNColorTests-iOS"
                ReferencedContainer = "container:KGNColor.xcodeproj">
             </BuildableReference>
          </TestableReference>

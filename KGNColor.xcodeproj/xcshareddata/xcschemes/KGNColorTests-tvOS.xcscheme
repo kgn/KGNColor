@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "836E69961BCCD3B40089EAB1"
-               BuildableName = "KGNColor.framework"
-               BlueprintName = "KGNColor-iOS"
-               ReferencedContainer = "container:KGNColor.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -32,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "836E69A01BCCD3B40089EAB1"
-               BuildableName = "KGNColorTests-iOS.xctest"
-               BlueprintName = "KGNColorTests-iOS"
+               BlueprintIdentifier = "6412C2F11D2A0A4D00C78066"
+               BuildableName = "KGNColorTests-tvOS.xctest"
+               BlueprintName = "KGNColorTests-tvOS"
                ReferencedContainer = "container:KGNColor.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +26,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "836E69961BCCD3B40089EAB1"
+            BlueprintIdentifier = "6412C2D81D29FE0E00C78066"
             BuildableName = "KGNColor.framework"
-            BlueprintName = "KGNColor-iOS"
+            BlueprintName = "KGNColor-tvOS"
             ReferencedContainer = "container:KGNColor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +45,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "836E69961BCCD3B40089EAB1"
-            BuildableName = "KGNColor.framework"
-            BlueprintName = "KGNColor-iOS"
-            ReferencedContainer = "container:KGNColor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +54,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "836E69961BCCD3B40089EAB1"
-            BuildableName = "KGNColor.framework"
-            BlueprintName = "KGNColor-iOS"
-            ReferencedContainer = "container:KGNColor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

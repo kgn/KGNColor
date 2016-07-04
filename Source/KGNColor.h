@@ -6,11 +6,11 @@
 //  Copyright © 2015 David Keegan. All rights reserved.
 //
 
-#if WATCHOS_DEPLOYMENT_TARGET
-#import <WatchKit/WatchKit.h>
-#else
+//#if WATCHOS_DEPLOYMENT_TARGET
+//#import <WatchKit/WatchKit.h>
+//#else
 #import <UIKit/UIKit.h>
-#endif
+//#endif
 
 //! Project version number for KGNColor.
 FOUNDATION_EXPORT double KGNColorVersionNumber;
