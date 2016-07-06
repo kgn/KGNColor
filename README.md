@@ -69,8 +69,8 @@ let tintColor = UIColor.greenColor().darken(0.5)
 - [X] CocoaPods
 - [X] Description
 - [X] Documentation
-- [ ] AppleTV
-- [ ] AppleWatch
+- [X] AppleTV
+- [X] AppleWatch
 - [X] Prebuilt Frameworks
 - [ ] Travis Test Matrix
 
