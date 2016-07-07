@@ -1,12 +1,15 @@
 //
-//  UIColor+Hex.swift
-//  UIColor+Hex
+//  UIColor+Extension.swift
+//  UIColor+Extension
 //
 //  Created by David Keegan on 9/24/14.
 //  Copyright (c) 2014 David Keegan. All rights reserved.
 //
 
 import UIKit
+
+// TODO: should the darken/lighten values be clamped with the new deep colors?
+// or should values <0 & >1 be allowed?
 
 extension UIColor {
 
@@ -33,11 +36,11 @@ extension UIColor {
     - Returns: A tuple of the `red`, `green`, `blue` and `alpha` components of the color object.
     */
     public var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        let components = CGColorGetComponents(self.CGColor)
-        if CGColorGetNumberOfComponents(self.CGColor) == 2 {
-            return (components[0], components[0], components[0], components[1])
+        let components = self.cgColor.components
+        if self.cgColor.numberOfComponents == 2 {
+            return (components![0], components![0], components![0], components![1])
         }
-        return (components[0], components[1], components[2], components[3])
+        return (components![0], components![1], components![2], components![3])
     }
 
     /**
@@ -57,10 +60,10 @@ extension UIColor {
 
     - Returns: A lightened color object.
     */
-    public func lighten(value: CGFloat) -> UIColor{
+    public func lighten(by value: CGFloat) -> UIColor{
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        return UIColor(hue: hue, saturation: saturation*(1-value), brightness: brightness*(1+value), alpha: alpha)
+        return UIColor(hue: hue, saturation: clamp(saturation*(1-value)), brightness: clamp(brightness*(1+value)), alpha: alpha)
     }
 
     /**
@@ -70,10 +73,10 @@ extension UIColor {
 
     - Returns: A darkened color object.
     */
-    public func darken(value: CGFloat) -> UIColor{
+    public func darken(by value: CGFloat) -> UIColor{
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        return UIColor(hue: hue, saturation: saturation*(1+value), brightness: brightness*(1-value), alpha: alpha)
+        return UIColor(hue: hue, saturation: clamp(saturation*(1+value)), brightness: clamp(brightness*(1-value)), alpha: alpha)
     }
 
     /**
@@ -83,11 +86,15 @@ extension UIColor {
 
      - Returns: A random color object.
      */
-    public class func randomColor(alpha: CGFloat = 1) -> UIColor {
+    public class func random(alpha: CGFloat = 1) -> UIColor {
         let hue = CGFloat(arc4random() % 256) / 256.0  //  0.0 to 1.0
         let saturation = CGFloat(arc4random() % 128) / 256.0 + 0.5  //  0.5 to 1.0, away from white
         let brightness = CGFloat(arc4random() % 128) / 256.0 + 0.5  //  0.5 to 1.0, away from black
         return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
+    }
+    
+    private func clamp(_ value: CGFloat) -> CGFloat {
+        return min(max(value, 0), 1)
     }
 
 }
