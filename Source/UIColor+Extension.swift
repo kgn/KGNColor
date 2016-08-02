@@ -36,11 +36,9 @@ extension UIColor {
     - Returns: A tuple of the `red`, `green`, `blue` and `alpha` components of the color object.
     */
     public var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        let components = self.cgColor.components
-        if self.cgColor.numberOfComponents == 2 {
-            return (components![0], components![0], components![0], components![1])
-        }
-        return (components![0], components![1], components![2], components![3])
+        var red = CGFloat(0), green = CGFloat(0), blue = CGFloat(0), alpha = CGFloat(0)
+        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red, green, blue, alpha)
     }
 
     /**
