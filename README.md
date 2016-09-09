@@ -2,6 +2,7 @@
 
 `KGNColor` is a collection of helpful `UIColor` extensions.
 
+[![Swift 3](http://img.shields.io/badge/Swift-3-orange.svg)]()
 [![Release](https://img.shields.io/github/release/kgn/KGNColor.svg)](/releases)
 [![License](http://img.shields.io/badge/License-MIT-lightgrey.svg)](/LICENSE)
 
@@ -39,7 +40,7 @@ let tintColor = UIColor(hex: 0x2DFF5F)
 Used this helpful tuple to get the `red`, `green`, `blue` and `alpha` values of a `UIColor`.
 
 ``` Swift
-let tintColor = UIColor.brownColor()
+let tintColor = UIColor.brown
 print("red: \(tintColor.components.red)")
 print("green: \(tintColor.components.green)")
 print("blue: \(tintColor.components.blue)")
@@ -48,17 +49,17 @@ print("alpha: \(tintColor.components.alpha)")
 
 ### Invert a Color
 ``` Swift
-let tintColor = UIColor.redColor().invert()
+let tintColor = UIColor.red.inverted
 ```
 
 ### Lighten a Color
 ``` Swift
-let tintColor = UIColor.blueColor().lighten(0.5)
+let tintColor = UIColor.blue.lighten(0.5)
 ```
 
 ### Darken a Color
 ``` Swift
-let tintColor = UIColor.greenColor().darken(0.5)
+let tintColor = UIColor.green.darken(0.5)
 ```
 
 ## Progress

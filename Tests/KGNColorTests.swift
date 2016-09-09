@@ -24,9 +24,9 @@ class KGNColorTests: XCTestCase {
     }
 
     func testInvert() {
-        XCTAssertEqual(UIColor.red.invert(), UIColor(red: 0, green: 1, blue: 1, alpha: 1))
-        XCTAssertEqual(UIColor.green.invert(), UIColor(red: 1, green: 0, blue: 1, alpha: 1))
-        XCTAssertEqual(UIColor.blue.invert(), UIColor(red: 1, green: 1, blue: 0, alpha: 1))
+        XCTAssertEqual(UIColor.red.inverted, UIColor(red: 0, green: 1, blue: 1, alpha: 1))
+        XCTAssertEqual(UIColor.green.inverted, UIColor(red: 1, green: 0, blue: 1, alpha: 1))
+        XCTAssertEqual(UIColor.blue.inverted, UIColor(red: 1, green: 1, blue: 0, alpha: 1))
     }
 
     func testLighten() {
@@ -60,13 +60,14 @@ class KGNColorTests: XCTestCase {
     }
 
     func testRandomColor() {
-        XCTAssertNotEqual(UIColor.random(), UIColor.random())
+        XCTAssertNotEqual(UIColor.random, UIColor.random)
+        XCTAssertNotEqual(UIColor.random(alpha: 0.5), UIColor.random(alpha: 0.5))
 
         let alpha: CGFloat = 0.45
         let colorWithAlpha = UIColor.random(alpha: alpha)
         XCTAssertEqual(colorWithAlpha.components.alpha, alpha)
 
-        let color = UIColor.random()
+        let color = UIColor.random
         XCTAssertEqual(color.components.alpha, 1)
     }
     
