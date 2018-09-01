@@ -1,13 +1,13 @@
 language: objective-c
-osx_image: xcode9
+osx_image: xcode10
 
 env:
   global:
     - PROJECT=KGNColor
   matrix:
-    - DESTINATION="OS=11.0,name=iPhone 6s Plus" SCHEME=$PROJECT-iOS SDK=iphonesimulator TEST=test
-    - DESTINATION="OS=11.0,name=Apple TV 1080p" SCHEME=$PROJECT-tvOS SDK=appletvsimulator TEST=test
-    - DESTINATION="OS=4.0,name=Apple Watch - 42mm" SCHEME=$PROJECT-watchOS SDK=watchsimulator TEST=
+    - DESTINATION="OS=12.0,name=iPhone 6s Plus" SCHEME=$PROJECT-iOS SDK=iphonesimulator TEST=test
+    - DESTINATION="OS=12.0,name=Apple TV 1080p" SCHEME=$PROJECT-tvOS SDK=appletvsimulator TEST=test
+    - DESTINATION="OS=5.0,name=Apple Watch - 42mm" SCHEME=$PROJECT-watchOS SDK=watchsimulator TEST=
 
 script:
   - xcodebuild $TEST -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk $SDK -destination "$DESTINATION"
